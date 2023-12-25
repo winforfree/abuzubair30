@@ -112,5 +112,19 @@
         <footer>
         &copy; 2023 HOT GIRLS. All rights reserved.
     </footer>
+    <script>document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey) {
+                if (e.key === 's' || e.key === 'u') {
+                    e.preventDefault();
+                    console.log('Ctrl+' + e.key + ' is blocked');
+                }
+            }
+        });
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+            console.log('Right-click is blocked');
+        });
+    </script>
 </body>
 </html>
